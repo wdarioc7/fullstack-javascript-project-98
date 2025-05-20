@@ -1,0 +1,35 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Codica Project Juegos mentales",
+  "homepage": "https://github.com/wdarioc7/fullstack-javascript-project-98#readme",
+  "bugs": {
+    "url": "https://github.com/wdarioc7/fullstack-javascript-project-98/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wdarioc7/fullstack-javascript-project-98.git"
+  },
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "license": "ISC",
+  "author": "Dario Campaña",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "expo lint"
+  },
+  "dependencies": {
+    "eslint-plugin-flowtype": "^8.0.3",
+    "readline-sync": "^1.4.10"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@eslint/js": "^8.57.1",
+    "eslint": "^9.27.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "globals": "^8.18.0"
+  }
+}
