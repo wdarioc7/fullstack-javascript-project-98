@@ -7,9 +7,7 @@ function generarProgresion(longitud = 10, inicio = 1, paso = 2) {
 
 // Juego principal
 export function brainProgression() {
-  console.log('¡Bienvenido a Brain Games!');
-  const name = readlineSync.question('¿Cuál es tu nombre? ');
-  console.log(`¡Hola, ${name}!`);
+  
   console.log('¿Qué número falta en la progresión?');
 
   for (let i = 0; i < 3; i++) {

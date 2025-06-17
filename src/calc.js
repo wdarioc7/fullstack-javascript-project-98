@@ -26,9 +26,6 @@ function generarPregunta() {
 }
 
 export function brainCalc() {
-  console.log('¡Bienvenido a Brain Games!');
-  const name = readlineSync.question('¿Cuál es tu nombre? ');
-  console.log(`¡Hola, ${name}!`);
   console.log('¿Cuál es el resultado de la expresión?');
 
   for (let i = 0; i < 3; i++) {

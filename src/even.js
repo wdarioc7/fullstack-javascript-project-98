@@ -3,10 +3,7 @@ import readlineSync from 'readline-sync';
 let streak = 0;
 
 export function esPar() {
-  console.log('¡Bienvenidos a Brain Games!');
-  const name = readlineSync.question('¿Cuál es tu nombre?: ');
-  console.log(`¡Hola, ${name}!`);
-
+ 
   while (true) {
     const numero = Math.floor(Math.random() * 100) + 1;
     console.log(`El número aleatorio generado es: ${numero}`);

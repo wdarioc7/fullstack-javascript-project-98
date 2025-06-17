@@ -12,9 +12,7 @@ function calcularMCD(a, b) {
 
 // Juego principal
 export function brainGCD() {
-  console.log('¡Bienvenido a Brain Games!');
-  const name = readlineSync.question('¿Cuál es tu nombre? ');
-  console.log(`¡Hola, ${name}!`);
+ 
   console.log('Encuentra el máximo común divisor de los números dados.');
 
   for (let i = 0; i < 3; i++) {

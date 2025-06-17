@@ -18,9 +18,7 @@ function generarPregunta() {
 }
 //Función principal del juego
 export function brainPrime() {
-  console.log('¡Bienvenido a Brain Games!');
-  const name = readlineSync.question('¿Cuál es tu nombre? ');
-  console.log(`¡Hola, ${name}!`);
+ 
   console.log('Responde "yes" si el número es primo, o "no" si no lo es.');
 
   for (let i = 0; i < 3; i++) {
