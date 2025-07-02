@@ -30,7 +30,7 @@ export function esPar() {
 
     //console.log(`Tu racha actual es de ${streak} aciertos.`);
 
-    const continuar = readlineSync.question('¿Quieres seguir jugando? (yes/no): ').toLowerCase();
+    const continuar = readlineSync.question('¿Quieres seguir jugando? (yes/no):').toLowerCase();
     if (continuar !== 'yes') {
       console.log(`Tu racha final fue de ${streak} aciertos.`);
       break;
