@@ -1,5 +1,7 @@
 import readlineSync from 'readline-sync';
+import { sayHiToUser } from "../src/cli.js";
 
+let name = sayHiToUser();
 let streak = 0;
 
 export function esPar() {
@@ -24,7 +26,7 @@ export function esPar() {
     }
 
     if (streak >= 3) {
-      console.log(`¡Felicidades!, Bill!`);
+      console.log(`¡Felicidades!, ${name}! Tu racha actual es de ${streak} aciertos.`);
       break;
     }
 

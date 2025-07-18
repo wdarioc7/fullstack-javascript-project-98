@@ -1,5 +1,7 @@
 import readlineSync from 'readline-sync';
+import { sayHiToUser } from "../src/cli.js";
 
+let name = sayHiToUser();
 // Función para generar una progresión aritmética
 function generarProgresion(longitud = 10, inicio = 1, paso = 2) {
   return Array.from({ length: longitud }, (_, i) => inicio + i * paso);

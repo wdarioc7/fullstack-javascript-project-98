@@ -1,5 +1,7 @@
 import readlineSync from 'readline-sync';
+import { sayHiToUser } from "../src/cli.js";
 
+let name = sayHiToUser();
 // Función para calcular el MCD usando el algoritmo de Euclides
 function calcularMCD(a, b) {
   while (b !== 0) {

@@ -1,4 +1,7 @@
 import readlineSync from 'readline-sync';
+import { sayHiToUser } from "../src/cli.js";
+
+let name = sayHiToUser();
 
 //Funciòn para verificar si un número es primo
 function esPrimo(numero) {
