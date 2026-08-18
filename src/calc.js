@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import { sayHiToUser } from "../src/cli.js";
+import { sayHiToUser } from './cli.js';
 
-let name = sayHiToUser();
+const name = sayHiToUser();
 
 function generarPregunta() {
   const operadores = ['+', '-', '*'];
@@ -20,11 +20,13 @@ function generarPregunta() {
     case '*':
       resultado = numero1 * numero2;
       break;
+    default:
+      break;
   }
 
   return {
     pregunta: `${numero1} ${operador} ${numero2}`,
-    respuestaCorrecta: resultado
+    respuestaCorrecta: resultado,
   };
 }
 

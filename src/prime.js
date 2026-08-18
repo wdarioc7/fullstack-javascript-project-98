@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
-import { sayHiToUser } from "../src/cli.js";
+import { sayHiToUser } from './cli.js';
 
-let name = sayHiToUser();
+const name = sayHiToUser();
 
-//Funciòn para verificar si un número es primo
+// Funciòn para verificar si un número es primo
 function esPrimo(numero) {
   if (numero <= 1) return false;
   for (let i = 2; i <= Math.sqrt(numero); i++) {
@@ -11,17 +11,16 @@ function esPrimo(numero) {
   }
   return true;
 }
-//Función para generar una pregunta
+// Función para generar una pregunta
 function generarPregunta() {
   const numero = Math.floor(Math.random() * 100) + 1; // Número entre 1 y 100
   return {
     pregunta: numero,
-    respuestaCorrecta: esPrimo(numero) ? 'yes' : 'no'
+    respuestaCorrecta: esPrimo(numero) ? 'yes' : 'no',
   };
 }
-//Función principal del juego
+// Función principal del juego
 export function brainPrime() {
- 
   console.log('Responde "yes" si el número es primo, o "no" si no lo es.');
 
   for (let i = 0; i < 3; i++) {

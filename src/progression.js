@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import { sayHiToUser } from "../src/cli.js";
+import { sayHiToUser } from './cli.js';
 
-let name = sayHiToUser();
+const name = sayHiToUser();
 // Función para generar una progresión aritmética
 function generarProgresion(longitud = 10, inicio = 1, paso = 2) {
   return Array.from({ length: longitud }, (_, i) => inicio + i * paso);
@@ -9,18 +9,17 @@ function generarProgresion(longitud = 10, inicio = 1, paso = 2) {
 
 // Juego principal
 export function brainProgression() {
-  
   console.log('¿Qué número falta en la progresión?');
 
   for (let i = 0; i < 3; i++) {
     const longitud = 10;
     const inicio = Math.floor(Math.random() * 20) + 1; // entre 1 y 20
-    const paso = Math.floor(Math.random() * 5) + 1;     // entre 1 y 5
+    const paso = Math.floor(Math.random() * 5) + 1; // entre 1 y 5
     const progresion = generarProgresion(longitud, inicio, paso);
 
     const indiceOculto = Math.floor(Math.random() * longitud);
     const respuestaCorrecta = progresion[indiceOculto];
-    const progresionConHueco = progresion.map((n, i) => (i === indiceOculto ? '..' : n)).join(' ');
+    const progresionConHueco = progresion.map((n, p) => (p === indiceOculto ? '..' : n)).join(' ');
 
     console.log(`Pregunta: ${progresionConHueco}`);
     const respuestaUsuario = readlineSync.question('Tu respuesta: ');
