@@ -10,7 +10,7 @@ export function esPar() {
     const numero = Math.floor(Math.random() * 100) + 1;
     console.log(`Pregunta: ${numero}`);
 
-    const respuesta = readlineSync.question('Responde "yes" si el número dado es par, de lo contrario responde "no". ').toLowerCase();
+    const respuesta = readlineSync.question('Responde "yes" si el número es par, de lo contrario responde "no".').toLowerCase();
 
     const esParRes = numero % 2 === 0;
     const esCorrecto = (esParRes && respuesta === 'yes') || (!esParRes && respuesta === 'no');
