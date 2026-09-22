@@ -11,7 +11,7 @@ function calcularMCD(a, b) {
     y = x % y;
     x = temp;
   }
-  return a;
+  return x;
 }
 
 // Juego principal

@@ -21,7 +21,7 @@ function generarPregunta() {
 }
 // Función principal del juego
 export function brainPrime() {
-  console.log('Responde "yes" si el número dado es primo. De lo contrario responde "no".');
+  console.log('Responde "yes" si el número dado es primo. De lo contrario, responde "no".');
 
   for (let i = 0; i < 3; i++) {
     const { pregunta, respuestaCorrecta } = generarPregunta();
